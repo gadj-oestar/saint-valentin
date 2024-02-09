@@ -4,6 +4,9 @@
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
+    border: none;
+    padding: 5px;
+
 }
 
 body{
@@ -20,12 +23,14 @@ body{
     margin: 30px;
     margin-left: 500px;
     border-radius: 10px;
+    border: none;
+    padding: 5px;
 
 } 
 
 .nounours {
    margin-left: 400px;
-   margin-top: 90px;
+   margin-top: 10px;
 
 
 }
@@ -41,4 +46,15 @@ h1{
 
 
 @import url('https://fonts.cdnfonts.com/css/fiolex-girls');
+
+@media screen and (max-width: 600px) {
+    .yuh {
+        margin-left: 150px;
+      
+    }
+
+    .nounours{
+        margin-left: 50px;
+    }
+  }
     
