@@ -1,6 +1,8 @@
 const non = document.querySelector(".nunh");
 const oui = document.querySelector(".yuh");
 const nounours = document.querySelector(".nounours");
+const h2 = document.querySelector(".en-tete")
+const h1 = document.querySelector(".tete")
 
 let compteur =0
 let tab = [ "EHH MASAKA", " TES SUR  ", " TAS ENCORE UNE SECONDE CHANCE", " TU VEUX VRAIMENT PAS ?", " VA CLIQUER SUR AVEC JOIE ", "  TU ES TROP DURE ENVERS TOI MEME", "BECAUSE IM BLACK", " ALLEZ MON MADAME CLIQUE SUR LE BOUTTON VERT", "NIGGER"];
@@ -32,6 +34,8 @@ oui.addEventListener("click", function(){
     oui.style.display="none";
     non.style.display="none";
      nounours.innerHTML='<img src="./image/amours.gif" alt="nounours">'
+     h1.style.display="none";
+     h2.style.display="block";
 });
 
 

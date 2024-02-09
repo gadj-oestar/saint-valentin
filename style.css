@@ -44,17 +44,38 @@ h1{
 
 }
 
+.en-tete{
+    display: none;
+    font-family: 'Fiolex Girls', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
 
 @import url('https://fonts.cdnfonts.com/css/fiolex-girls');
 
 @media screen and (max-width: 600px) {
     .yuh {
-        margin-left: 150px;
+        margin:auto;
+        margin-top: 40px;
+        margin-left: 100px;
+        
       
     }
 
+    h1{
+        margin: auto;
+        width: 100%;    }
+
+        h2{
+            margin: auto;
+            width: 100%;
+        }
+
     .nounours{
-        margin-left: 50px;
+        margin: auto;
+        width: 100%;
     }
   }
     
