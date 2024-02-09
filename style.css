@@ -1,0 +1,44 @@
+ .nunh{
+    background-color: rgb(237, 5, 5);
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body{
+    background-image: url(./image/PODUIM.jpg);
+
+  
+}
+
+.yuh{
+    background-color: rgb(237, 5, 140);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    margin-left: 500px;
+    border-radius: 10px;
+
+} 
+
+.nounours {
+   margin-left: 400px;
+   margin-top: 90px;
+
+
+}
+
+h1{
+    font-family: 'Fiolex Girls', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/fiolex-girls');
+    
