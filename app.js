@@ -25,7 +25,6 @@ btnNon.addEventListener("click", () => {
   const taille = refus * AGRANDISSEMENT + "px";
   btnOui.style.padding = taille;
   btnOui.style.fontSize = taille;
-  btnOui.style.marginLeft = taille;
 
   // Plus de messages : le bouton "non" disparaît
   if (refus > messages.length) {
