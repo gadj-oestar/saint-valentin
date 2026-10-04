@@ -1,81 +1,59 @@
- .nunh{
-    background-color: rgb(237, 5, 5);
-    color: antiquewhite;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-
+body {
+  background-image: url("image/podium.jpg");
 }
 
-body{
-    background-image: url(./image/PODUIM.jpg);
-
-  
+/* Titres */
+.question,
+.felicitations {
+  font-family: "Fiolex Girls", sans-serif;
+  color: aliceblue;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
-.yuh{
-    background-color: rgb(237, 5, 140);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: center;
-    margin: 30px;
-    margin-left: 500px;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
+.felicitations {
+  display: none;
+}
 
-} 
-
+/* Image */
 .nounours {
-   margin-left: 400px;
-   margin-top: 10px;
-
-
+  margin: 10px 0 0 400px;
 }
 
-h1{
-    font-family: 'Fiolex Girls', sans-serif;
-    color: aliceblue;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-
+/* Boutons */
+.btn-oui,
+.btn-non {
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.en-tete{
-    display: none;
-    font-family: 'Fiolex Girls', sans-serif;
-    color: aliceblue;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
+.btn-oui {
+  background-color: rgb(237, 5, 140);
+  color: white;
+  margin: 30px;
+  margin-left: 500px;
 }
 
-@import url('https://fonts.cdnfonts.com/css/fiolex-girls');
+.btn-non {
+  background-color: rgb(237, 5, 5);
+  color: antiquewhite;
+}
 
+/* Mobile */
 @media screen and (max-width: 600px) {
-    .yuh {
-        margin:auto;
-        margin-top: 40px;
-        margin-left: 100px;
-        
-      
-    }
-
-    h1{
-        margin: auto;
-        width: 100%;    }
-
-        h2{
-            margin: auto;
-            width: 100%;
-        }
-
-    .nounours{
-        margin: auto;
-        width: 100%;
-    }
+  .question,
+  .felicitations,
+  .nounours {
+    margin: auto;
+    width: 100%;
   }
-    
+
+  .btn-oui {
+    margin: 40px auto auto 100px;
+  }
+}
