@@ -1,43 +1,43 @@
-const non = document.querySelector(".nunh");
-const oui = document.querySelector(".yuh");
+const btnOui = document.querySelector(".btn-oui");
+const btnNon = document.querySelector(".btn-non");
 const nounours = document.querySelector(".nounours");
-const h2 = document.querySelector(".en-tete")
-const h1 = document.querySelector(".tete")
+const question = document.querySelector(".question");
+const felicitations = document.querySelector(".felicitations");
 
-let compteur =0
-let tab = [ "EHH MASAKA", " TES SUR  ", " TAS ENCORE UNE SECONDE CHANCE", " TU VEUX VRAIMENT PAS ?", " VA CLIQUER SUR AVEC JOIE ", "  TU ES TROP DURE ENVERS TOI MEME", "BECAUSE IM BLACK", " ALLEZ MON MADAME CLIQUE SUR LE BOUTTON VERT", "NIGGER"];
-let compteur1=0
-let compteur2=0
+const messages = [
+  "EHH MASAKA",
+  "T'ES SÛRE ?",
+  "T'AS ENCORE UNE SECONDE CHANCE",
+  "TU VEUX VRAIMENT PAS ?",
+  "VA CLIQUER SUR AVEC JOIE",
+  "TU ES TROP DURE ENVERS TOI-MÊME",
+  "BECAUSE I'M BLACK",
+  "ALLEZ MADAME, CLIQUE SUR LE BOUTON ROSE",
+];
 
+const AGRANDISSEMENT = 20; // px ajoutés au bouton "oui" à chaque refus
+let refus = 0;
 
-non.addEventListener("click", function(){
+btnNon.addEventListener("click", () => {
+  refus++;
 
-     compteur1=compteur1+1;
-     compteur2=compteur2-10
-       non.innerHTML = tab[compteur1];
-    console.log("hello");
-    compteur= compteur+20;
-    oui.style.padding = compteur + "px";
-    oui.style.fontSize = compteur + "px"
-    oui.style.marginLeft = compteur + "px"
-    non.style.padding = compteur2 + "px";   
-    if ( tab===7){
-        non.style.display="none";
-    
-       
-    }
-  
-})
+  // Le bouton "oui" grossit à chaque refus
+  const taille = refus * AGRANDISSEMENT + "px";
+  btnOui.style.padding = taille;
+  btnOui.style.fontSize = taille;
 
-
-oui.addEventListener("click", function(){
-    oui.style.display="none";
-    non.style.display="none";
-     nounours.innerHTML='<img src="./image/amours.gif" alt="nounours">'
-     h1.style.display="none";
-     h2.style.display="block";
+  // Plus de messages : le bouton "non" disparaît
+  if (refus > messages.length) {
+    btnNon.style.display = "none";
+    return;
+  }
+  btnNon.textContent = messages[refus - 1];
 });
 
-
-
-  
+btnOui.addEventListener("click", () => {
+  btnOui.style.display = "none";
+  btnNon.style.display = "none";
+  question.style.display = "none";
+  felicitations.style.display = "block";
+  nounours.innerHTML = '<img src="image/nounours-amour.gif" alt="Nounours amoureux">';
+});
